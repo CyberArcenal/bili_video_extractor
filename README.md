@@ -3,17 +3,16 @@
 
 # Bilibili Video Extractor Tool
 
-A script to automate merging audio and video from Bilibili downloads, with an option to delete source files after successful merge.
+A script to automate merging audio and video from Bilibili Android downloads, with auto-delete feature for processed files.
 
 ## Features
 - Auto-detect 16/64 quality folders
 - Title extraction from `entry.json`
 - Auto-delete source folder after merge
-- Compatible with Termux (Android), Windows, and Linux
+- Optimized for Termux (Android)
 
 ## Requirements
-- Python 3.7+
-- FFmpeg
+- Android device with Termux
 - Bilibili app folder structure:
   ```
   download/
@@ -29,75 +28,58 @@ A script to automate merging audio and video from Bilibili downloads, with an op
 
 ## Installation
 
-### For All Platforms
-1. **Install Python**:  
-   [Python Official Site](https://www.python.org/downloads/)
+### Termux Setup
+1. Update packages:
+   ```bash
+   pkg update && pkg upgrade
+   ```
 
-2. **Install FFmpeg**:
-   - **Termux**:
-     ```bash
-     pkg install python ffmpeg
-     ```
-   - **Windows**:  
-     [FFmpeg Windows Builds](https://www.gyan.dev/ffmpeg/builds/)  
-     (Add to system PATH)
-   - **Linux**:
-     ```bash
-     sudo apt install python3 ffmpeg
-     ```
+2. Install dependencies:
+   ```bash
+   pkg install python ffmpeg git
+   ```
 
-## Usage
-
-1. **Download the Script**:
+3. Clone repository:
    ```bash
    git clone https://github.com/CyberArcenal/bili_video_extractor.git
    cd bili_video_extractor
    ```
 
-2. **Run the Script**:
-   ```bash
-   python merger.py
-   ```
+## Usage
 
-3. **Input/Output Paths**:
-   - **Default Input Path** (For Bilibili Android):  
-     `/storage/emulated/0/Android/data/com.bstar.intl/download/`
-   - **Output Folder**:  
-     Automatically creates `Output/` folder in current directory
-
-4. **Auto-Delete Feature**:  
-   Source folders will be automatically deleted after successful merge.
-
-## Platform-Specific Guides
-
-### 📱 For Termux (Android)
-1. Open Termux
-2. Enable storage access:
+1. Grant storage access:
    ```bash
    termux-setup-storage
    ```
-3. Run script using default path:
+
+2. Run the script:
    ```bash
    python merger.py
    ```
 
+3. Default paths:
+   - Input: `/storage/emulated/0/Android/data/com.bstar.intl/download/`
+   - Output: `Output/` folder in current directory
+
+4. Processed folders will be automatically deleted
+
 ## Troubleshooting
 **Error: "FFmpeg not found"**  
-- Install FFmpeg and ensure it's in system PATH
+- Reinstall FFmpeg: `pkg reinstall ffmpeg`
 
 **Permission Denied**  
-- Use `sudo` on Linux
 - Grant storage permission in Termux
+- Restart Termux after permission grant
 
 **"Missing audio/video"**  
-- Verify folder structure
-- Ensure `audio.m4s` and `video.m4s` exist
+- Verify Bilibili download completed
+- Check folder structure matches requirements
 
 ## ⚠️ Important Notes
-- **Create backups** before running the script
-- Already deleted folders won't be reprocessed
-- Quality may vary by source (16 = 360p, 64 = 720p)
+- Backup files before first use
+- Internet connection required for initial setup
+- Test with 1-2 files first before bulk processing
 
 ---
 
-*Created for Bilibili video archival purposes. Use responsibly.*
+*For Bilibili Android users only. Not affiliated with Bilibili Inc.*
