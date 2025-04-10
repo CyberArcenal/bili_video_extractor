@@ -1,9 +1,7 @@
-```markdown
-# Bilibili Video Merger Tool
-
 ![FFmpeg](https://img.shields.io/badge/Powered%20by-FFmpeg-orange.svg)
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
-
+markdown
+# Bilibili Video Merger Tool
 Isang script para i-automate ang pagsasama ng audio at video mula sa Bilibili downloads, na may opsyon na mag-delete ng source files pagkatapos ng successful merge.
 
 ## Features
@@ -16,8 +14,7 @@ Isang script para i-automate ang pagsasama ng audio at video mula sa Bilibili do
 - Python 3.7+
 - FFmpeg
 - Folder structure mula sa Bilibili app:
-  ```
-  download/
+download/
   ├── [ID1]/
   │   └── 1/
   │       ├── entry.json
@@ -26,8 +23,6 @@ Isang script para i-automate ang pagsasama ng audio at video mula sa Bilibili do
   │           └── video.m4s
   ├── [ID2]/
   └── ...
-  ```
-
 ## Installation
 
 ### Para sa Lahat ng Platform
