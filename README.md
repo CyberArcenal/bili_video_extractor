@@ -82,23 +82,6 @@ A script to automate merging audio and video from Bilibili downloads, with an op
    python merger.py
    ```
 
-### 🖥️ For Windows
-1. Verify FFmpeg is in PATH:
-   ```cmd
-   ffmpeg -version
-   ```
-2. Run in Command Prompt/Powershell:
-   ```cmd
-   python merger.py
-   ```
-
-### 🐧 For Linux
-1. Ensure write permissions for output folder
-2. Run in terminal:
-   ```bash
-   python3 merger.py
-   ```
-
 ## Troubleshooting
 **Error: "FFmpeg not found"**  
 - Install FFmpeg and ensure it's in system PATH
