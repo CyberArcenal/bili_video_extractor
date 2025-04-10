@@ -54,7 +54,7 @@ A script to automate merging audio and video from Bilibili Android downloads, wi
 
 2. Run the script:
    ```bash
-   python merger.py
+   python main.py
    ```
 
 3. Default paths:
