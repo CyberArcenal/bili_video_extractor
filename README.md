@@ -2,7 +2,7 @@ markdown
 ![FFmpeg](https://img.shields.io/badge/Powered%20by-FFmpeg-orange.svg)
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
 
-# Bilibili Video Merger Tool
+# Bilibili Video Extractor Tool
 
 A script to automate merging audio and video from Bilibili downloads, with an option to delete source files after successful merge.
 
@@ -51,8 +51,8 @@ A script to automate merging audio and video from Bilibili downloads, with an op
 
 1. **Download the Script**:
    ```bash
-   git clone https://github.com/yourusername/bilibili-merger.git
-   cd bilibili-merger
+   git clone https://github.com/CyberArcenal/bili_video_extractor.git
+   cd bili_video_extractor
    ```
 
 2. **Run the Script**:
