@@ -1,6 +1,4 @@
-Here's the English version of your README.md:
-
-```markdown
+markdown
 ![FFmpeg](https://img.shields.io/badge/Powered%20by-FFmpeg-orange.svg)
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
 
@@ -121,13 +119,3 @@ A script to automate merging audio and video from Bilibili downloads, with an op
 ---
 
 *Created for Bilibili video archival purposes. Use responsibly.*
-```
-
-Key changes made:
-1. Translated all Filipino text to English
-2. Maintained proper technical terms (e.g., `entry.json`, file paths)
-3. Preserved code formatting and markdown structure
-4. Kept platform-specific instructions accurate
-5. Maintained badge links and formatting
-6. Translated error messages and troubleshooting tips
-7. Final disclaimer kept in English equivalent
